@@ -1,0 +1,159 @@
+.home-page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  .background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .bg-image {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+  }
+  
+  .bg-image.overlay {
+    opacity: 0.5;
+  }
+  
+  .top-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 1;
+  }
+  
+  .logo {
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .nav-link {
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .contact-btn {
+    background: url('https://dashboard.codeparrot.ai/api/assets/Z3BDjoDQVAQjI3Xc') no-repeat center/cover;
+    border: none;
+    width: 210px;
+    height: 50px;
+    color: #2d1d5a;
+    font-family: 'Outfit', sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 90px);
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .title {
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 1052px;
+  }
+  
+  .gallery-btn {
+    background: url('https://dashboard.codeparrot.ai/api/assets/Z3BDjoDQVAQjI3Xd') no-repeat center/cover;
+    border: none;
+    width: 276px;
+    height: 65px;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  /* Adjust nav links and logo size */
+@media (max-width: 768px) {
+    .top-nav {
+      padding: 10px 20px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .nav-link,
+    .contact-btn {
+      font-size: 18px;
+      padding: 5px;
+    }
+  }
+  
+  /* Adjust main content for smaller screens */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 40px;
+    }
+  
+    .gallery-btn {
+      width: 200px;
+      height: 50px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Very small devices */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 30px;
+    }
+  
+    .gallery-btn {
+      width: 150px;
+      height: 40px;
+    }
+  }
+  

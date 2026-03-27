@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox practice</title>
+</head>
+<body>
+    <style>
+        .pink{
+            display: flex;
+            background-color: lightpink;
+            width: 75px;
+        }
+        .blue{
+            display: flex;
+            background-color: lightblue;
+            width: 200px;   
+        }
+        .win,
+        .mid{
+            display: flex;
+            background-color: lightblue;
+            width: 50pxpx; 
+            margin-top: 30px;  
+        }
+        .low{
+            display: flex;
+            background-color: lightpink;
+            flex: 1;
+            margin-top: 30px;
+        }
+    </style>
+    <div style="
+    display: flex;
+    flex-direction: row;">
+        <div class="blue">div 1</div>
+        <div class="pink"> div 2</div>
+
+    </div>
+
+    <div style="
+    display: flex;
+    flex-direction: row;">
+        <div class="win">div 1</div>
+        <div class="low"> div 2</div>
+        <div class="mid"> div 3</div>
+    </div>
+</body>
+</html>
